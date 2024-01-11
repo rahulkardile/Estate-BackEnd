@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 dotenv.config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3100
 const MONGO_URL = process.env.MONGOURL
 
 try {

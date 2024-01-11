@@ -9,7 +9,7 @@ import listingRouter from './routes/ListingRouter.js'
 
 const app = express();
 
-const Origin = "https://659fa83eca578a482093b054--extraordinary-belekoy-7126b7.netlify.app/" ||  "http://localhost:5173"
+const Origin = "https://659fa83eca578a482093b054--extraordinary-belekoy-7126b7.netlify.app/"
 
 app.use(cookieParser());
 app.use(express.json());

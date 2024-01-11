@@ -2,13 +2,18 @@ import express from 'express'
 import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 import userRouter from './routes/UserRoutes.js' 
 import listingRouter from './routes/ListingRouter.js'
 
 const app = express();
+
+const Origin = "http://localhost:5173"
+
 app.use(cookieParser());
 app.use(express.json());
+app.use(cors({ credentials: true, origin: Origin }));
 
 dotenv.config();
 const PORT = process.env.PORT

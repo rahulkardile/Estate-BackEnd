@@ -13,7 +13,7 @@ const Origin = "http://localhost:5173"
 
 app.use(cookieParser());
 app.use(express.json());
-app.use(cors({ credentials: true, origin: Origin }));
+app.use(cors({origin: Origin }));
 
 dotenv.config();
 const PORT = process.env.PORT || 3100

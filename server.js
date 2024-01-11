@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors({ credentials: true, origin: Origin }));
 
 dotenv.config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3100
 const MONGO_URL = process.env.MONGOURL
 
 try {
